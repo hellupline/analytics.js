@@ -295,6 +295,7 @@ Mixtore.prototype.normalize = function(msg) {
   };
   ctx.language = w.navigator.language;
   ctx.encoding = d.charset;
+  ctx.partner_id = w.partner_id;
 
   // if user provides campaign via context, do not overwrite with UTM qs param
   if (query && !ctx.campaign) {
@@ -4662,7 +4663,7 @@ module.exports={
   "_args": [
     [
       "@segment/analytics.js-core@3.4.0",
-      "/Users/renanvedovatotraba/projects/analytics/segmentio/analytics.js"
+      "/Users/renanvedovatotraba/projects/analytics/analytics.js"
     ]
   ],
   "_from": "@segment/analytics.js-core@3.4.0",
@@ -4687,7 +4688,7 @@ module.exports={
   ],
   "_resolved": "https://registry.npmjs.org/@segment/analytics.js-core/-/analytics.js-core-3.4.0.tgz",
   "_spec": "3.4.0",
-  "_where": "/Users/renanvedovatotraba/projects/analytics/segmentio/analytics.js",
+  "_where": "/Users/renanvedovatotraba/projects/analytics/analytics.js",
   "author": {
     "name": "Segment",
     "email": "friends@segment.com"
@@ -14066,7 +14067,7 @@ module.exports={
   },
   "homepage": "https://github.com/hellupline/analytics.js#readme",
   "dependencies": {
-    "@mixtore/analytics.js-integration-mixtore": "https://github.com/hellupline/analytics.js-integration-mixtore/tarball/mixtore",
+    "@mixtore/analytics.js-integration-mixtore": "git+ssh://git@bitbucket.org:fabiotomio/mixtore-analytics.js.git#mixtore",
     "@segment/analytics.js-core": "^3.0.0",
     "@segment/analytics.js-integration": "^3.1.0"
   },
